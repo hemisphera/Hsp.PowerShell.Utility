@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Hsp.PowerShell.Utility")]
-[assembly: AssemblyDescription("A simple PowerShell host implementation + some utility classes")]
+[assembly: AssemblyTitle("Hsp.PowerShell.Utility.Test")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hemisphera")]
-[assembly: AssemblyProduct("Hsp.PowerShell.Utility")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Hsp.PowerShell.Utility.Test")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("90f81cf3-8cc6-4f60-b909-7752dcb86909")]
+[assembly: Guid("5a315576-32ea-485c-8019-7277fae11d8b")]
 
 // Version information for an assembly consists of the following four values:
 //

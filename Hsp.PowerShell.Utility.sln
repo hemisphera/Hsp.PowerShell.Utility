@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsp.PowerShell.Utility", "Hsp.PowerShell.Utility\Hsp.PowerShell.Utility.csproj", "{90F81CF3-8CC6-4F60-B909-7752DCB86909}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsp.PowerShell.Utility.Test", "Hsp.PowerShell.Utility.Test\Hsp.PowerShell.Utility.Test.csproj", "{5A315576-32EA-485C-8019-7277FAE11D8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{90F81CF3-8CC6-4F60-B909-7752DCB86909}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90F81CF3-8CC6-4F60-B909-7752DCB86909}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90F81CF3-8CC6-4F60-B909-7752DCB86909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A315576-32EA-485C-8019-7277FAE11D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A315576-32EA-485C-8019-7277FAE11D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A315576-32EA-485C-8019-7277FAE11D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A315576-32EA-485C-8019-7277FAE11D8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

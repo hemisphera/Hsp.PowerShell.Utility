@@ -159,6 +159,11 @@ namespace Hsp.PowerShell.Utility
       return await Task.Run(() => Invoke());
     }
 
+    public async Task<IEnumerable<T>> InvokeAsync<T>()
+    {
+      return await Task.Run(() => Invoke<T>());
+    }
+
     public Collection<PSObject> Invoke(bool discardOutput = false)
     {
       discardOutput = discardOutput || DiscardOutput;

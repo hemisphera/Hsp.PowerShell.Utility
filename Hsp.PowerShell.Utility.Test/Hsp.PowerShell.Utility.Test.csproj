@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90F81CF3-8CC6-4F60-B909-7752DCB86909}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hsp.PowerShell.Utility</RootNamespace>
-    <AssemblyName>Hsp.PowerShell.Utility</AssemblyName>
+    <ProjectGuid>{5A315576-32EA-485C-8019-7277FAE11D8B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Hsp.PowerShell.Utility.Test</RootNamespace>
+    <AssemblyName>Hsp.PowerShell.Utility.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,9 +34,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.PowerShell.2.ReferenceAssemblies.1.0.0\lib\net2\System.Management.Automation.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,23 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions.cs" />
-    <Compile Include="UserInterface\BufferInterface.cs" />
-    <Compile Include="UserInterface\ConsolePsUserInterface.cs" />
-    <Compile Include="UserInterface\IPsUserInterface.cs" />
-    <Compile Include="UserInterface\PsStreamEntry.cs" />
-    <Compile Include="UserInterface\PsStreamEntryType.cs" />
-    <Compile Include="UserInterface\NullInterface.cs" />
-    <Compile Include="PsChoiceItem.cs" />
-    <Compile Include="SimplePsHost.cs" />
-    <Compile Include="SimplePsHostRawUserInterface.cs" />
-    <Compile Include="SimplePsHostUserInterface.cs" />
-    <Compile Include="PsRunner.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PsCommandInvoker.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hsp.PowerShell.Utility\Hsp.PowerShell.Utility.csproj">
+      <Project>{90f81cf3-8cc6-4f60-b909-7752dcb86909}</Project>
+      <Name>Hsp.PowerShell.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
